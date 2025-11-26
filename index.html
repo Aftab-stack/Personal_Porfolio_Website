@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohd Aftab — Frontend Web Developer</title>
+  <meta name="description"
+    content="Portfolio of Mohd Aftab — Frontend Web Developer. Projects, skills, contact and links to GitHub & LinkedIn." />
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="images/favicon.png" />
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add any fonts/icons here (optional) -->
+  <!-- <link href="https://fonts.googleapis.com/..." rel="stylesheet"> -->
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============= HEADER / NAV ============= -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- You can replace with logo img -->
+        <a href="" class="logo" aria-label="Mohd Aftab — Home">Mohd Aftab</a>
+        <p class="subtitle">Frontend Web Developer</p>
+      </div>
+
+      <nav class="site-nav" role="navigation" aria-label="Primary">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+          <!-- simple hamburger icon markup -->
+          <span class="hamburger"></span>
+        </button>
+
+        <ul id="primary-menu" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- ============= MAIN ============= -->
+  <main id="main" tabindex="-1">
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero" role="region" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 id="hero-heading">
+            Hi, I'm <span class="name">Mohd Aftab</span>
+          </h1>
+          <p class="lead">
+            Frontend Web Developer building responsive and accessible websites
+            with HTML, CSS & JavaScript.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="Mohd_Aftab Resume.pdf" class="btn" download>Download Resume</a>
+          </div>
+
+          <!-- Optional quick info -->
+          <ul class="hero-meta">
+            <li>Location: India</li>
+            <li>Open to: Frontend Roles / Internships</li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <!-- Placeholder for profile image or illustration -->
+          <img src="logo.png" alt="Mohd Aftab — profile" width="320" height="320" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about" role="region" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a BCA student at United University and a Frontend Web
+              Developer. I build responsive, user-friendly apps and enjoy
+              learning new tech.
+            </p>
+
+            <ul class="about-list">
+              <li><strong>Education:</strong> BCA — United University</li>
+              <li>
+                <strong>Interested in:</strong> Full-Stack development, AI &
+                ML (future)
+              </li>
+              <li><strong>Strengths:</strong> Fast learner, Focused</li>
+            </ul>
+          </div>
+
+          <div class="about-stats">
+            <!-- small stats or timeline (optional) -->
+            <dl>
+              <div>
+                <dt>Projects</dt>
+                <dd>5+</dd>
+              </div>
+              <div>
+                <dt>Languages & Tools</dt>
+                <dd>HTML, CSS, JS, React</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills" role="region" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">Skills</h2>
+
+        <div class="skills-grid">
+          <article class="skill-card" aria-labelledby="skill-frontend">
+            <h3 id="skill-frontend">Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (Flexbox, Grid)</li>
+              <li>JavaScript (ES6)</li>
+              <li>React.js (basic)</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" aria-labelledby="skill-styling">
+            <h3 id="skill-styling">Styling & Frameworks</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>Responsive Design</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" aria-labelledby="skill-tools">
+            <h3 id="skill-tools">Tools</h3>
+            <ul>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Chrome DevTools</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects" role="region" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Projects</h2>
+        <p class="projects-intro">
+          A selection of projects demonstrating responsive UI and JavaScript
+          skills. Live demos & source code available on GitHub.
+        </p>
+        <div class="project-filters">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="html">HTML/CSS</button>
+          <button data-filter="js">JavaScript</button>
+          <button data-filter="react">React</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project card example — duplicate for all projects -->
+          <article class="project-card" data-title="YouTube Clone"
+            data-description="Responsive YouTube UI clone with modern layout." data-category="js" data-category="css"
+            data-category="html" data-tech="HTML, CSS, JavaScript" data-image="youtube-clone.png"
+            data-live="https://yourusername.github.io/youtube-clone"
+            data-github="https://github.com/yourusername/youtube-clone">
+            <div class="project-card-inner">
+              <img src="youtube-clone.png" alt="YouTube Clone screenshot" class="project-thumb" />
+              <div class="project-body">
+                <h3 class="project-title">YouTube Clone</h3>
+                <p class="project-desc">
+                  Responsive UI inspired by YouTube. Built with HTML, CSS and
+                  JavaScript.
+                </p>
+                <p class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </p>
+
+                <div class="project-links">
+                  <a href="https://your-github-username.github.io/youtube-clone" target="_blank"
+                    rel="noopener noreferrer">Live Demo</a>
+                  <a href="https://github.com/your-github-username/youtube-clone" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-title="YouTube Clone"
+            data-description="Responsive YouTube UI clone with modern layout." data-category="js" data-category="html"
+            data-tech="HTML, CSS, JavaScript" data-image="facebook.png"
+            data-live="https://yourusername.github.io/youtube-clone"
+            data-github="https://github.com/yourusername/youtube-clone">
+            <div class="project-card-inner">
+              <img src="facebook.png" alt="Facebook Clone screenshot" class="project-thumb" />
+              <div class="project-body">
+                <h3 class="project-title">Facebook Clone</h3>
+                <p class="project-desc">
+                  Simple social feed UI with responsive layout and interactive
+                  elements.
+                </p>
+                <p class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </p>
+
+                <div class="project-links">
+                  <a href="https://your-github-username.github.io/facebook-clone" target="_blank"
+                    rel="noopener noreferrer">Live Demo</a>
+                  <a href="https://github.com/your-github-username/facebook-clone" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-title="YouTube Clone"
+            data-description="Responsive YouTube UI clone with modern layout." data-category="js" data-category="html"
+            data-tech="HTML, CSS, JavaScript" data-image="analog.png"
+            data-live="https://yourusername.github.io/youtube-clone"
+            data-github="https://github.com/yourusername/youtube-clone">
+            <div class="project-card-inner">
+              <img src="analog.png" alt="Analog watch screenshot" class="project-thumb" />
+              <div class="project-body">
+                <h3 class="project-title">Analog watch</h3>
+                <p class="project-desc">Simple working Analog watch.</p>
+                <p class="project-tech">
+                  <strong>Tech:</strong> HTML, CSS, JavaScript
+                </p>
+
+                <div class="project-links">
+                  <a href="https://your-github-username.github.io/facebook-clone" target="_blank"
+                    rel="noopener noreferrer">Live Demo</a>
+                  <a href="https://github.com/your-github-username/facebook-clone" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more project-card blocks for Analog Watch, Password Generator, Notes App, etc. -->
+        </div>
+
+        <!-- Template for JS (optional) -->
+
+        <!-- <template id="project-template">
+            <article
+              class="project-card"
+              data-title="Analog Watch"
+              data-description="Analog watch."
+              data-tech="HTML, CSS, JavaScript"
+              data-image="analog.png"
+              data-live="https://yourusername.github.io/youtube-clone"
+              data-github="https://github.com/yourusername/youtube-clone"
+            >
+              <div class="project-card-inner">
+                <img src="analog.png" class="project-thumb" alt="Project screenshot" />
+                <div class="project-body">
+                  <h3 class="project-title">Analog watch</h3>
+                  <p class="project-desc"></p>
+                  <p class="project-tech"></p>
+                  <div class="project-links"></div>
+                </div>
+              </div>
+            </article>
+          </template> -->
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact" role="region" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          If you'd like to work together or have any questions, feel free to
+          reach out.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in touch</h3>
+            <ul class="contact-list">
+              <li>
+                <strong>Email:</strong>
+                <a href="aikhan7080@gmail.com">aikhan7080@gmail.com</a>
+              </li>
+              <li>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Aftab-stack" target="_blank"
+                  rel="noopener noreferrer">https://github.com/Aftab-stack</a>
+              </li>
+              <li>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/mohd-aftab-29a1442a4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BusMI%2BhJxRNiXR5F3gBsSRQ%3D%3D" 
+                    target=" _blank" rel="noopener noreferrer">linkedin.com/in/My-Linkedin</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <!-- Simple contact form (no backend included). Use Formspree or Netlify forms or implement your own backend later. -->
+            <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+              </div>
+
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Brief message..." required></textarea>
+              </div>
+
+              <div class="form-row">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+
+              <p class="form-note" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="socials">
+          <a
+            href="https://github.com/your-github-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/your-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </div>
+
+      <p class="copyright">
+        © <span id="year"></span> Mohd Aftab. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============= SCRIPTS ============= -->
+  <noscript>
+    <p class="no-js">This site works best with JavaScript enabled.</p>
+  </noscript>
+
+  <script src="script.js" defer></script>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div id="project-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-description">Project description goes here.</p>
+
+      <div class="modal-images">
+        <img id="modal-image" src="" alt="Project Screenshot" />
+      </div>
+
+      <p id="modal-tech"><strong>Tech:</strong></p>
+
+      <div class="modal-links">
+        <a id="modal-live" href="#" target="_blank">Live Demo</a>
+        <a id="modal-github" href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
